@@ -46,15 +46,7 @@ export class VotingComponent {
       '#33FF8C'  // Vert menthe
     ];
 
-    public color1: string [] = [
-      '#33FF8C'  // Vert menthe
-    ]
-    public color2: string [] = [
-      '#FF8C33', // Orange foncé
-    ]
-    public color3: string [] = [
-      '#FF3333', // Rouge vif
-    ]
+
   
     getColor(index: number): string {
       return this.colors[index % this.colors.length];
