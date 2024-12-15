@@ -38,4 +38,8 @@ export class LoginComponent {
       alert('Email ou mot de passe invalide')
     }
   }
+
+  loginWithGoogle() {
+    this.authService.loginWithGoogle();
+  }
 }
