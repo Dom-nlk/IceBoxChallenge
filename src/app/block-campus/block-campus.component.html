@@ -1,0 +1,24 @@
+
+<div class="container" (click)="OnCampus()">
+    <div class="icon" [ngStyle]="{'background-color': color}">
+        <i class="fa-solid fa-school"></i>
+    </div>
+    <div class="content">
+        <div class="description">
+            <span>{{campus.name}}</span>
+            <span>
+                Group : 
+                <span [ngClass]="{
+                  'group-a': campus.group === 'A',
+                  'group-b': campus.group === 'B',
+                  'group-c': campus.group === 'C'
+                }">{{ campus.group }}</span>
+              </span>
+              
+        </div>
+        
+        <div class="capteurs">
+            <span>{{campus.score}}%</span>
+        </div>
+    </div>
+</div>

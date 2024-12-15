@@ -1,0 +1,47 @@
+<div class="podium-container">
+  <div class="podium-group">
+    <h2 class="t1">Group A</h2>
+    <div class="podium">
+      <div *ngIf="groupA[1]" class="podium-block second">
+        <app-block-campus [campus]="groupA[1]" [color]="color2" [isClickable]="false"></app-block-campus>
+      </div>
+      <div *ngIf="groupA[0]" class="podium-block first">
+        <app-block-campus [campus]="groupA[0]" [color]="color1" [isClickable]="false"></app-block-campus>
+      </div>
+      <div *ngIf="groupA[2]" class="podium-block third">
+        <app-block-campus [campus]="groupA[2]" [color]="color3" [isClickable]="false"></app-block-campus>
+      </div>
+    </div>
+  </div>
+
+  <div class="podium-group">
+    <h2 class="t2">Group B</h2>
+    <div class="podium">
+      <div *ngIf="groupB[1]" class="podium-block second">
+        <app-block-campus [campus]="groupB[1]" [color]="color2" [isClickable]="false"></app-block-campus>
+      </div>
+      <div *ngIf="groupB[0]" class="podium-block first">
+        <app-block-campus [campus]="groupB[0]" [color]="color1" [isClickable]="false"></app-block-campus>
+      </div>
+      <div *ngIf="groupB[2]" class="podium-block third">
+        <app-block-campus [campus]="groupB[2]" [color]="color3" [isClickable]="false"></app-block-campus>
+      </div>
+    </div>
+  </div>
+
+  <div class="podium-group">
+    <h2 class="t3">Group C</h2>
+    <div class="podium">
+      <div *ngIf="groupC[1]" class="podium-block second">
+        <app-block-campus [campus]="groupC[1]" [color]="color2" [isClickable]="false"></app-block-campus>
+      </div>
+      <div *ngIf="groupC[0]" class="podium-block first">
+        <app-block-campus [campus]="groupC[0]" [color]="color1" [isClickable]="false"></app-block-campus>
+      </div>
+      <div *ngIf="groupC[2]" class="podium-block third">
+        <app-block-campus [campus]="groupC[2]" [color]="color3" [isClickable]="false"></app-block-campus>
+      </div>
+    </div>
+  </div>
+  <div class="space"></div>
+</div>

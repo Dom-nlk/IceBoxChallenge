@@ -1,0 +1,84 @@
+
+
+<div class="container" [style.backgroundImage]="backgroundImage">
+    <div class="search-container">
+    </div>
+    @if (campus) {
+        <div class="content1">
+            <div class="block1 bl">
+                <div class="profile">
+                    <img [src]="image" alt="">
+                    <div class="description">
+                        <span>{{campus.name}} </span>
+                    </div>
+                </div>
+            </div>
+            <div class="block2 bl">
+                <div class="details">
+                    <h2>Détails des critères</h2>
+                    <div class="infos">
+                        <div class="title">
+                            <span class="t">Ice Box Challenge</span>
+                            <span class="t">Flipped class</span>
+                            <span class="t">Best video-Infographic</span>
+                            <span class="t">Best video regarding IBC</span>
+                            <span class="t">Best feedback</span>
+                            <span class="t">Best Advertisement</span>
+                            <span class="t">Best expert interview</span>
+                        </div>
+                        <div class="data">                              
+                            <span class="d" [ngClass]="getClassForValue(slider1Value)">{{slider1Value}}</span>
+                            <span class="d" [ngClass]="getClassForValue(slider2Value)">{{slider2Value}}</span>
+                            <span class="d" [ngClass]="getClassForValue(slider3Value)">{{slider3Value}}</span>
+                            <span class="d" [ngClass]="getClassForValue(slider4Value)">{{slider4Value}}</span>
+                            <span class="d" [ngClass]="getClassForValue(slider5Value)">{{slider5Value}}</span>
+                            <span class="d" [ngClass]="getClassForValue(slider6Value)">{{slider6Value}}</span>
+                            <span class="d" [ngClass]="getClassForValue(slider7Value)">{{slider7Value}}</span>
+                        </div>
+                        
+                        <div class="submit-button">
+                            <button class="btn" (click)="OnSubmit()">Submit</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    }
+
+    <div class="coolbox-container">
+        <div class="slider-container">
+            <div class="wrapper slider1">
+                <input type="range" min="0" max="10" [(ngModel)]="slider1Value" step="0.5" />
+                <span class="range_value">{{slider1Value}}</span>
+            </div>
+            <div class="wrapper slider2">
+                <input type="range" min="0" max="10" [(ngModel)]="slider2Value" step="0.5" />
+                <span class="range_value">{{slider2Value}}</span>
+            </div>
+            <div class="wrapper slider3">
+                <input type="range" min="0" max="10" [(ngModel)]="slider3Value" step="0.5" />
+                <span class="range_value">{{slider3Value}}</span>
+            </div>
+            <div class="wrapper slider4">
+                <input type="range" min="0" max="10" [(ngModel)]="slider4Value" step="0.5" />
+                <span class="range_value">{{slider4Value}}</span>
+            </div>
+            <div class="wrapper slider5">
+                <input type="range" min="0" max="10" [(ngModel)]="slider5Value" step="0.5" />
+                <span class="range_value">{{slider5Value}}</span>
+            </div>
+            <div class="wrapper slider6">
+                <input type="range" min="0" max="10" [(ngModel)]="slider6Value" step="0.5" />
+                <span class="range_value">{{slider6Value}}</span>
+            </div>
+            <div class="wrapper slider7">
+                <input type="range" min="0" max="10" [(ngModel)]="slider7Value" step="0.5" />
+                <span class="range_value">{{slider7Value}}</span>
+            </div>
+              
+        </div>
+    </div>  
+</div>
+  

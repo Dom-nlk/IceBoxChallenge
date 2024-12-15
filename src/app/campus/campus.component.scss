@@ -1,0 +1,63 @@
+.podium-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //background-color: antiquewhite;
+    background-image: url('/campus_gps.jpg');
+    gap: 40px;
+    background-size: cover; /* Cette propriété permet à l'image de couvrir tout le conteneur */ 
+    background-position: center; /* Centre l'image dans le conteneur */ 
+    background-repeat: no-repeat;
+  
+    .podium-group {
+      text-align: center;
+      width: 100%;
+      //background-color: aquamarine;
+  
+      h2 {
+        //margin-bottom: 10px;
+        //color: var(--color-blue-normal);
+      }
+      .t1 {
+        color: red;
+      }
+      .t2 {
+        color: green;
+      }
+      .t3 {
+        color: blue;
+      }
+  
+      .podium {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-right: 170px;
+        //background-color: pink;
+        gap: 100px;
+        position: relative;
+  
+        .podium-block {
+          width: 120px;
+          transition: 0.3s;
+        }
+  
+        .first {
+          transform: translateY(0px);
+          z-index: 10;
+        }
+  
+        .second {
+          transform: translateY(30px);
+        }
+  
+        .third {
+          transform: translateY(50px);
+        }
+      }
+    }
+  }
+  
+  .space {
+    height: 30px;
+  }

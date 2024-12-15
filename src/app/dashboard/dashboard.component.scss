@@ -1,0 +1,31 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.side {
+    position: fixed;
+    float: left;
+    width: 250px;
+    height: 100vh;
+}
+
+.main-content {
+    position: relative;
+    width: calc(100% - 250px);
+    height: 100vh;
+    float: right;
+    //background-color: yellow;
+}
+
+
+@media screen and (max-width: 900px) {
+    .side {
+        width: 80px;
+    }
+    .main-content {
+        width: calc(100% - 80px);
+    }
+
+}

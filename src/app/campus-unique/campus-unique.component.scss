@@ -1,0 +1,344 @@
+
+.container {
+    height: calc(100% - 80px);
+    width: 100%;
+    //background-color: antiquewhite;
+    //background-image: url('/campus_gps.jpg');
+    background-size: cover; /* Cette propriété permet à l'image de couvrir tout le conteneur */ 
+    background-position: center; /* Centre l'image dans le conteneur */ 
+    background-repeat: no-repeat;
+}
+
+.search-container {
+    height: 20px;
+    width: 100%;
+    //background-color: violet;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.coolbox-container {
+  //height: calc(100% - 60px);
+    width: 100%;
+   //background-color: aqua;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    //padding: 0 10px;
+    padding-bottom: 20px;
+    margin: 20px;
+}
+
+.slider-container {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: rgba(60, 66, 87, 0.08) 0px 5px 10px 0px,rgba(0, 0, 0, 0.08) 0px 2px 4px 0px;
+    flex-wrap: wrap;
+}
+
+* {
+    /*
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    */
+  }
+  
+  :host {
+    /*
+    display: block;
+    min-height: 100vh;
+    max-width: 480px;
+    margin: 0 auto;
+    //background-color: #05051a;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    */
+  }
+  
+  .wrapper {
+    position: relative;
+    height: 20rem;
+    width: 3rem;
+    margin: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    &::before,
+    &::after {
+      display: block;
+      position: absolute;
+      z-index: 99;
+      color: #fff;
+      width: 100%;
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 1;
+      padding: 0.75rem 0;
+      pointer-events: none;
+    }
+  
+    &::before {
+      content: "+";
+      top: 0;
+    }
+  
+    &::after {
+      content: "−";
+      bottom: 0;
+    }
+  }
+  
+  input[type="range"] {
+    -webkit-appearance: none;
+    background-color: #7e7e83;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    width: 20rem;
+    height: 3.5rem;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: row-resize;
+  /*
+    &[step] {
+      background-color: transparent;
+      background-image: repeating-linear-gradient(
+        to right,
+        rgba(#fff, 0.2),
+        rgba(#fff, 0.2) calc(12.5% - 1px),
+        #05051a 12.5%
+      );
+    }
+      */
+  
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 0;
+      box-shadow: -20rem 0 0 20rem rgba(#fff, 0.2);
+    }
+  
+    &::-moz-range-thumb {
+      border: none;
+      width: 0;
+      box-shadow: -20rem 0 0 20rem rgba(#fff, 0.2);
+    }
+  }
+
+  /* Style for the value display */
+.range_value {
+    font-size: 20px; /* Font size for value */
+    font-weight: bold; /* Make the value bold */
+    color: white; /* Dark color for contrast */
+    width: 40px; /* Set a fixed width to align the values */
+    text-align: center; /* Center the value */
+    z-index: 2;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+.container {
+    height: calc(100% - 80px);
+    width: 100%;
+}
+
+.content1 {
+    //background-color: aqua;
+    padding-top: 20px;
+    width: 100%;
+    //height: 250px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bl {
+    border-radius: 25px;
+    //position: absolute;
+    box-shadow: rgba(60, 66, 87, 0.08) 0px 5px 10px 0px,rgba(0, 0, 0, 0.08) 0px 2px 4px 0px;
+    background-color: white;
+}
+
+.block1 {
+    height: 265px;
+    width: 280px;
+    background-color: var(--color-orange-normal);
+    margin-left:50px;
+    left: 0;
+}
+.profile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+.description span {
+    font-size: 25px;
+    font-weight: bold;
+    //color: var(--color-blue-normal);
+    color: white;
+}
+
+.block2 {
+    height: 265px;
+    width: 500px;
+    //background-color: yellow;
+}
+.block3 {
+    height: 265px;
+    width: 380px;
+    //background-color: yellow;
+}
+
+.submit-button {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn {
+    padding: 5px;
+    color: white;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    height: 40px;
+    width: 130px;
+    background-color: var(--color-orange-normal);
+    border: none;
+    border-radius: 15px;
+    transition: 0.5s;
+  }
+
+  .btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+.details h2 {
+    margin-left: 20px;
+    color: var(--color-blue-normal);
+}
+
+.infos {
+    //background-color: blue;
+    display: flex;
+}
+.title {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    //background-color: greenyellow;
+}
+.t {
+    color: rgb(119, 117, 117);
+    margin-bottom: 3px;
+}
+.data {
+    display: flex;
+    flex-direction: column;
+    //background-color: pink;
+    width: 50px;
+
+}
+.d {
+    margin-bottom: 3px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+.good { background-color: green; } 
+.average { background-color: orange; } 
+.bad { background-color: red; }
+
+
+.active {
+    color: green;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.inactive {
+    color: red;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.content2 {
+    width: 100%;
+    height: 400px;
+    //background-color: yellow;
+    display: flex;
+    justify-content: center;
+}
+
+google-map {
+    display: block;
+    margin-top: 20px;
+    width: 85%;
+    height: 90%;
+  }
+  
+  .styled-map {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Pour s'assurer que les coins arrondis sont appliqués correctement */
+  }
+
+
+  .blinking {
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  

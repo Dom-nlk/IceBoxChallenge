@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="search-container">
+    </div>
+      
+    <div class="coolbox-container">
+        <app-block-campus *ngFor="let campus of listCampuses; index as i" [campus]="campus" [color]="colors[i % colors.length]"/>
+    </div>
+</div>
