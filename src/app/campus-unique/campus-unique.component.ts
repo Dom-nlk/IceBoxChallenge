@@ -72,6 +72,9 @@ export class CampusUniqueComponent {
     } else if (name?.toLocaleLowerCase().includes('quito')) {
       this.setBackgroundImage('campus_quito.jpg');
       this.image = 'campus_quito.jpg'
+    } else if (name?.toLocaleLowerCase().includes('cochin')) {
+      this.setBackgroundImage('campus_cochin.jpg');
+      this.image = 'campus_cochin.jpg'
     }
     
   }
