@@ -18,8 +18,8 @@
                     <h2>Détails des critères</h2>
                     <div class="infos">
                         <div class="title">
-                            <span class="t">Ice Box Challenge</span>
-                            <span class="t">Flipped class</span>
+                           <!-- <span class="t">Ice Box Challenge</span>
+                            <span class="t">Flipped class</span> -->
                             <span class="t">Best video-Infographic</span>
                             <span class="t">Best video regarding IBC</span>
                             <span class="t">Best feedback</span>
@@ -27,8 +27,8 @@
                             <span class="t">Best expert interview</span>
                         </div>
                         <div class="data">                              
-                            <span class="d" [ngClass]="getClassForValue(slider1Value)">{{slider1Value}}</span>
-                            <span class="d" [ngClass]="getClassForValue(slider2Value)">{{slider2Value}}</span>
+                           <!-- <span class="d" [ngClass]="getClassForValue(slider1Value)">{{slider1Value}}</span>
+                            <span class="d" [ngClass]="getClassForValue(slider2Value)">{{slider2Value}}</span> -->
                             <span class="d" [ngClass]="getClassForValue(slider3Value)">{{slider3Value}}</span>
                             <span class="d" [ngClass]="getClassForValue(slider4Value)">{{slider4Value}}</span>
                             <span class="d" [ngClass]="getClassForValue(slider5Value)">{{slider5Value}}</span>
@@ -49,6 +49,7 @@
 
     <div class="coolbox-container">
         <div class="slider-container">
+            <!--
             <div class="wrapper slider1">
                 <input type="range" min="0" max="10" [(ngModel)]="slider1Value" step="0.5" />
                 <span class="range_value">{{slider1Value}}</span>
@@ -57,6 +58,8 @@
                 <input type="range" min="0" max="10" [(ngModel)]="slider2Value" step="0.5" />
                 <span class="range_value">{{slider2Value}}</span>
             </div>
+            -->
+
             <div class="wrapper slider3">
                 <input type="range" min="0" max="10" [(ngModel)]="slider3Value" step="0.5" />
                 <span class="range_value">{{slider3Value}}</span>

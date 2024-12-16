@@ -41,7 +41,7 @@
 
           <div class="ebloodinfo container">
             <div class="map-icon">
-              <img src="/gps.jpg" alt="">
+              <img src="/Ice_melting.gif" alt="">
             </div>
           </div>
           <div class="allcontainer">
@@ -55,6 +55,12 @@
                   <div class="field padding-bottom--24">
                     <label for="email">Email</label>
                     <input type="email" name="email" formControlName="email">
+                    <small class="alert" *ngIf="iceForm.get('email')?.hasError('required') && iceForm.get('email')?.touched">
+                      L'email est obligatoire.
+                    </small>
+                    <small class="alert" *ngIf="iceForm.get('email')?.hasError('email') && iceForm.get('email')?.touched">
+                      Veuillez entrer un email valide.
+                    </small>
                   </div>
                   <div class="field padding-bottom--24">
                     <div class="grid--50-50">
@@ -64,15 +70,19 @@
                       </div>
                     </div>
                     <input type="password" name="password" formControlName="password">
+                    <small class="alert" *ngIf="iceForm.get('password')?.hasError('required') && iceForm.get('password')?.touched">
+                      Le mot de passe est obligatoire.
+                    </small>
                   </div>
                   <div class="submit-button">
-                    <button class="btn" type="submit" (click)="onSubmitForm()">Connexion</button>
+                    <button class="btn" type="submit" [disabled]="iceForm.invalid" [ngClass]="{'enabled': !iceForm.invalid}" (click)="onSubmitForm()">Connexion</button>
+                  </div>
+                  <div class="result">
+                    <span class="text-result" (click)="onResult()">Just see result</span>
                   </div>
   
                 </form>
-                <div class="google-login">
-                  <button class="btngoogle-btn" (click)="loginWithGoogle()">Se connecter avec Google</button>
-                </div>
+
               </div>
             </div>
             <div class="footer-link padding-top--24">

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { HeaderService } from '../services/header.service';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -15,7 +16,8 @@ export class HeaderComponent {
 
   constructor(
     private router: Router, 
-    private headerService: HeaderService
+    private headerService: HeaderService,
+    private authService: AuthService
   ) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
@@ -48,4 +50,7 @@ export class HeaderComponent {
     }
   }
   */
+  onLogout() {
+    this.authService.logoutWithGoogle()
+  }
 }
